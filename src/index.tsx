@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './output.css'
-import App from './App';
+import './index.css'
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import PaymentDetail from './pages/PaymentDetail'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <PaymentDetail/>
   </React.StrictMode>,
   document.getElementById('root')
 );
