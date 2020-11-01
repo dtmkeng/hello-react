@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div.attrs({
-    className: 'flex mt-10 mr-32 ml-32'
-})`
-`
+    className: 'flex mt-10 mr-48 ml-48'
+})``
+
 
 const SubContainer  = styled.div.attrs({
     className: 'w-1/2 rounded-l-lg mt-4 ml-4'
@@ -24,14 +24,14 @@ const Title = styled.h1.attrs({
 
 
 const CaditCardButton = styled.button.attrs({
-    className: 'text-sm w-1/5 py-1 rounded-lg font-semibold'
+    className: 'text-sm w-1/3 h-8 py-1 rounded-lg font-semibold'
 })`
     background: #A069A0;
     color: white;
 `
 
 const PayPalButton = styled.button.attrs({
-    className: 'text-sm w-1/5 py-1 rounded-lg font-semibold m-5'
+    className: 'text-sm w-1/3 py-1 h-8 rounded-lg font-semibold  m-5'
 })`
     background: #C5B8C7;
     color: white;
@@ -92,12 +92,18 @@ const LabelInputRadio = styled.label.attrs(props => ({
     color: #C5B8C7;
 `
 
+const ImageCover = styled.img.attrs({
+    className: 'w-100 h-full',
+    src: 'https://img.freepik.com/free-photo/tulips-bouquet-pink-background-with-copyspace_24972-271.jpg?size=626&ext=jpg'
+})`
+`
+
 const PaymentDetail = () => {
     return( 
         <>
             <Container>
                 <SubContainer>
-                    IMAGE
+                    <ImageCover/>
                 </SubContainer>
                 <FormPaymentContainer>
                     <Title>PAYMENT DETAIL</Title>
