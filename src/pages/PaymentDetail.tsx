@@ -106,24 +106,27 @@ const PaymentDetail = () => {
                     <FormContainer>
                         <InputContainer>
                             <LabelInput>Cardholder Name</LabelInput>
-                            <InputField name="cardholder-name"></InputField>
+                            <InputField name="cardholder-name"/>
                         </InputContainer>
                         <InputContainer>
                             <LabelInput>Card Number</LabelInput>
                             <InputContainerAglie>
-                                <InputField name="card-number"></InputField>
+                                <InputField name="card-number"/>
                                 <ImageField/>
                             </InputContainerAglie>
                         </InputContainer>
                         <InputContainerAglieNear>
                             <InputContainer>
                                 <LabelInput>Experation Date</LabelInput>
-                                <InputField name="cardholder-name"></InputField>
+                                <InputField name="cardholder-name"/>
                             </InputContainer>
                             <SpaceBeteenInput/>
                             <InputContainer>
                                 <LabelInput>CVV</LabelInput>
-                                <InputField name="cardholder-name"></InputField>
+                                <InputField 
+                                    name="cardholder-name" 
+                                    type="password"
+                                />
                             </InputContainer>
                         </InputContainerAglieNear>
                         <InputContainerAglieNear>
@@ -132,7 +135,6 @@ const PaymentDetail = () => {
                         </InputContainerAglieNear>
                         <PurchaseButton>PURCHASE</PurchaseButton>
                     </FormContainer>
-
                 </FormPaymentContainer>
             </Container>
         </>
