@@ -74,7 +74,7 @@ const SpaceBeteenInput = styled.div.attrs({
 
 const RadioInput = styled.input.attrs({
     className: 'mt-3',
-    type: 'radio',
+    type: 'checkbox',
     value: 'Remember my card info'
 })``
 
