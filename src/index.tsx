@@ -4,11 +4,15 @@ import './output.css'
 import './index.css'
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import PaymentDetail from './pages/PaymentDetail'
+// import PaymentDetail from './pages/PaymentDetail'
+import Title from './pages/atomic/atomic/Title'
 
 ReactDOM.render(
   <React.StrictMode>
-    <PaymentDetail/>
+    {/* <PaymentDetail/> */}
+    <div>
+    <Title title='keng'></Title>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
