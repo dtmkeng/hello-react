@@ -11,9 +11,7 @@ interface Props {
 
 const Title: React.FC<Props> = ({ title }) => {
     return (
-        <>
-            <TitleComponent>{TitleComponent}</TitleComponent>
-        </>
+        <TitleComponent>{title}</TitleComponent>
     )
 }
 

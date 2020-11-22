@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import FlowerImage from './images/flower.jpeg';
 
 const Container = styled.div.attrs({
     className: 'flex mt-10 mr-48 ml-48'
@@ -93,17 +94,19 @@ const LabelInputRadio = styled.label.attrs(props => ({
 `
 
 const ImageCover = styled.img.attrs({
-    className: 'w-100 h-full',
-    src: 'https://img.freepik.com/free-photo/tulips-bouquet-pink-background-with-copyspace_24972-271.jpg?size=626&ext=jpg'
-})`
+    className: ''
+})
+`
+ min-width: 300px;
+ max-height: 600px;
 `
 
 const PaymentDetail = () => {
-    return( 
+    return(
         <>
             <Container>
                 <SubContainer>
-                    <ImageCover/>
+                    <ImageCover src={FlowerImage}/>
                 </SubContainer>
                 <FormPaymentContainer>
                     <Title>PAYMENT DETAIL</Title>
@@ -129,14 +132,14 @@ const PaymentDetail = () => {
                             <SpaceBeteenInput/>
                             <InputContainer>
                                 <LabelInput>CVV</LabelInput>
-                                <InputField 
-                                    name="cardholder-name" 
+                                <InputField
+                                    name="cardholder-name"
                                     type="password"
                                 />
                             </InputContainer>
                         </InputContainerAglieNear>
                         <InputContainerAglieNear>
-                            <RadioInput/> 
+                            <RadioInput/>
                             <LabelInputRadio>Remember my card info</LabelInputRadio>
                         </InputContainerAglieNear>
                         <PurchaseButton>PURCHASE</PurchaseButton>
