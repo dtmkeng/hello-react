@@ -2,15 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './output.css'
 import './index.css'
-// import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import PaymentDetail from './pages/PaymentDetail'
 // import Title from './pages/atomic/atomic/Title'
 
 ReactDOM.render(
   <React.StrictMode>
-    <PaymentDetail/>
-    {/* <Title title='keng'>Test</Title> */}
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
