@@ -5,11 +5,14 @@ import {
   BrowserRouter as Router,
 } from "react-router-dom";
 import PaymentDetail from './PaymentDetail';
+import DatePicker from './molecula/DatePicker'
 
 const HomePage: React.FC = () => {
   return (
     <>
       <h1>Hello Frontend's</h1>
+      <DatePicker/>
+      <h2>He</h2>
     </>
   )
 }
